@@ -174,23 +174,24 @@
                         <button class="btn btn-outline-custom" data-bs-toggle="modal" data-bs-target="#modalMusica">Sugerir canción</button>
                     </div>
                 </div>
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+               <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="floating-card">
-                        <i class="bi bi-suit-heart card-icon"></i>
-                        <h3>Dress Code</h3>
+                        <i class="bi bi-suit-heart card-icon"></i> <h3>Dress Code</h3>
                         <p>Detalles sobre el estilo de vestuario</p>
-                        <button class="btn btn-outline-custom" data-bs-toggle="modal" data-bs-target="#modalDressCode">+ Info</button>
+                        <button class="btn btn-outline-custom" data-bs-toggle="modal" data-bs-target="#modalDressCode">
+                            + Info
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="gifts-section">
+     <div class="gifts-section">
         <div class="container" data-aos="zoom-in">
             <h2 class="mb-3" style="color: var(--azul-profundo);">Regalos</h2>
-            <p>Se estará manejando un cofre durante el evento.</p>
-            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalRegalos">Ver Datos Bancarios</button>
+            <p class="mb-4">Durante el evento se estará manejando un cofre para que puedan pasar a dar sus regalos.</p>
+            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalRegalos">Ver Datos</button>
         </div>
     </div>
 
@@ -238,17 +239,22 @@
         </div>
     </div>
 
-    <div class="modal fade" id="modalDressCode" tabindex="-1">
+    <div class="modal fade" id="modalDressCode" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header"><h5>Dress Code</h5></div>
+                <div class="modal-header">
+                    <h5 class="modal-title">Estilo de Dress Code</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
                 <div class="modal-body">
-                    <p><strong>Formal / Etiqueta Rigurosa</strong></p>
-                    <p>Por favor, evitar color blanco y azul.</p>
+                    <p><strong> Formal / Etiqueta Rigurosa</strong></p>
+                    <p> Los Invitados deberan vestir de manera formal respetando las leyes y normas del evangelio </p>
+                    <p class="text-muted small">Por favor, evitar color blanco y azul.</p>
                 </div>
             </div>
         </div>
     </div>
+
 
     <div class="modal fade" id="modalRegalos" tabindex="-1">
         <div class="modal-dialog">
