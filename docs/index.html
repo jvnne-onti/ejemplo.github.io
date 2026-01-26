@@ -115,7 +115,8 @@
                     <h3>Salón Social Abby</h3>
                     <p class="fs-4">Hora de recepción: 6:00 PM</p>
                     <hr style="border-color: white; width: 50%; margin: 20px auto;">
-                    <p>Gral. Lázaro Cárdenas 48, Tijuana, B.C.</p>
+                     <p class="mb-1">Gral. Lázaro Cárdenas 48, Pob Delejido Francisco Villa</p>
+                    <p> Tijuana, B.C. CP: 22236 </p>
                     <a href="https://maps.google.com/?q=Salón+Social+Abby+Tijuana" target="_blank" class="btn-maps">
                         <i class="bi bi-geo-alt-fill"></i> Ver Ubicación
                     </a>
@@ -130,30 +131,33 @@
             <div class="row justify-content-center">
                 <div class="col-md-6 shadow p-4 rounded bg-white" data-aos="flip-left">
                     <form action="https://formsubmit.co/jannethontiveroscastillo@gmail.com" method="POST">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="https://tu-pagina-web.com/gracias.html"> 
-                        <input type="hidden" name="_subject" value="Nueva Confirmación Boda">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://jvnne-onti.github.io/ejemplo.github.io/"> 
+    <input type="hidden" name="_subject" value="Nueva Confirmación Boda">
 
-                        <div class="mb-3 text-center">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="asistencia" value="Si" checked>
-                                <label class="form-check-label">¡Sí podré asistir!</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="asistencia" value="No">
-                                <label class="form-check-label">No podré asistir</label>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Nombre Completo</label>
-                            <input type="text" class="form-control" name="nombre" required>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Cantidad de Acompañantes</label>
-                            <input type="number" class="form-control" name="acompanantes" value="0" min="0">
-                        </div>
-                        <button type="submit" class="btn btn-registar">Registrar Asistencia</button>
-                    </form>
+    <div class="mb-3 text-center">
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="asistencia" id="siAsisto" value="Si" checked>
+            <label class="form-check-label" for="siAsisto">¡Sí podré asistir!</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="asistencia" id="noAsisto" value="No">
+            <label class="form-check-label" for="noAsisto">No podré asistir</label>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre Completo (Obligatorio)</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" required>
+    </div>
+
+    <div class="mb-3">
+        <label for="acompanantes" class="form-label">Cantidad de Acompañantes</label>
+        <input type="number" class="form-control" id="acompanantes" name="acompanantes" min="0" value="0">
+    </div>
+
+    <button type="submit" class="btn btn-registar">Registrar Asistencia</button>
+</form>
                 </div>
             </div>
         </div>
@@ -204,19 +208,31 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="https://formsubmit.co/jannethontiveroscastillo@gmail.com" method="POST">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_subject" value="Nueva Sugerencia de Música">
-                        <div class="mb-3">
-                            <label class="form-label">Tu nombre</label>
-                            <input type="text" name="Nombre" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Canción y Autor</label>
-                            <input type="text" name="Cancion" class="form-control" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100">Enviar Sugerencia</button>
-                    </form>
+                     <form action="https://formsubmit.co/jannethontiveroscastillo@gmail.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://jvnne-onti.github.io/ejemplo.github.io/">
+    <input type="hidden" name="_subject" value="¡Nueva sugerencia de música!">
+    
+    <div class="mb-3">
+        <label class="form-label">Tu nombre (Obligatorio)</label>
+        <input type="text" name="Nombre_Invitado" class="form-control" placeholder="Escribe tu nombre" required>
+    </div>
+    
+    <div class="mb-3">
+        <label class="form-label">Canción y Autor</label>
+        <input type="text" name="Cancion_Sugerida" class="form-control" placeholder="Ej: Perfect - Ed Sheeran" required>
+    </div>
+    
+    <div class="mb-3">
+        <label class="form-label">Link de YouTube / Spotify (Opcional)</label>
+        <input type="url" name="Link_Musica" class="form-control" placeholder="https://...">
+    </div>
+    
+    <div class="text-end">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="submit" class="btn btn-primary">Enviar Sugerencia</button>
+    </div>
+</form>
                 </div>
             </div>
         </div>
